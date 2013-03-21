@@ -1,0 +1,39 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MobileSohhMaster.Master.cs"
+    Inherits="SohhScrape.MobileSohhMaster" %>
+
+<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MPiff.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <style type="text/css">
+	    @import "images/styleMainV28.css";
+	    body { font-size: 100%; }
+    </style>
+    <script type="text/javascript" src="scripts/functions28.js"></script>
+</head>
+<body runat="server">
+    <asp:ContentPlaceHolder ID="preXsltContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:Literal ID="xslTransformedContent" runat="server"></asp:Literal>
+
+    <asp:ContentPlaceHolder ID="postXsltContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <div id="subFooter">
+        <%if (Session["username"] != String.Empty) { %>
+        <a href="#top" onclick="window.scrollTo(0, 1); return false;"><%=Session["username"] %></a>
+        <%} else { %>
+        <a href="#top" onclick="window.scrollTo(0, 1); return false;">Not Logged In</a>
+        <%} %>
+    </div>
+    <a name="bottom"></a>
+
+    <asp:ContentPlaceHolder ID="footerBarContent" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BBB203B-B56B-48F0-94DB-97B647A8D338}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SohhScrape</RootNamespace>
+    <AssemblyName>SohhScrape</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\..\..\..\Downloads\HtmlAgilityPack.1.4.0\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="errors\GeneralError.aspx" />
+    <Content Include="errors\PageNotFound.aspx" />
+    <Content Include="ForceError.aspx" />
+    <Content Include="images\errors.css" />
+    <Content Include="images\logoSohhMobile.png" />
+    <Content Include="images\smilies\arnold.gif" />
+    <Content Include="images\smilies\biggie.gif" />
+    <Content Include="images\smilies\childplease.png" />
+    <Content Include="images\smilies\cook.gif" />
+    <Content Include="images\smilies\gladbron.gif" />
+    <Content Include="images\smilies\lholmes.png" />
+    <Content Include="logout.aspx" />
+    <Content Include="post.aspx" />
+    <Content Include="privacy.aspx" />
+    <Content Include="scripts\functions28.js" />
+    <Content Include="scripts\vbulletin_md5.js" />
+    <Content Include="showthreadUpdate.aspx" />
+    <Content Include="forumdisplay.aspx" />
+    <Content Include="images\buttons\viewpost.gif" />
+    <Content Include="images\smilies\2qdcu3a.gif" />
+    <Content Include="images\smilies\afro.gif" />
+    <Content Include="images\smilies\anakinpod.gif" />
+    <Content Include="images\smilies\angry.gif" />
+    <Content Include="images\smilies\argue.gif" />
+    <Content Include="images\smilies\Ban2.gif" />
+    <Content Include="images\smilies\biggrin.gif" />
+    <Content Include="images\smilies\Birthday.gif" />
+    <Content Include="images\smilies\blink.gif" />
+    <Content Include="images\smilies\blush.gif" />
+    <Content Include="images\smilies\bowdown.gif" />
+    <Content Include="images\smilies\bron.gif" />
+    <Content Include="images\smilies\cape.gif" />
+    <Content Include="images\smilies\cheers.gif" />
+    <Content Include="images\smilies\chef2.gif" />
+    <Content Include="images\smilies\clap.gif" />
+    <Content Include="images\smilies\congrats.gif" />
+    <Content Include="images\smilies\cool.gif" />
+    <Content Include="images\smilies\devil.gif" />
+    <Content Include="images\smilies\dj.gif" />
+    <Content Include="images\smilies\dj2.gif" />
+    <Content Include="images\smilies\drool.gif" />
+    <Content Include="images\smilies\drunk.gif" />
+    <Content Include="images\smilies\dry.gif" />
+    <Content Include="images\smilies\ducktales.gif" />
+    <Content Include="images\smilies\dv3md.gif" />
+    <Content Include="images\smilies\e6omir.gif" />
+    <Content Include="images\smilies\eating good.gif" />
+    <Content Include="images\smilies\evil.gif" />
+    <Content Include="images\smilies\facepalm.gif" />
+    <Content Include="images\smilies\fire.gif" />
+    <Content Include="images\smilies\fro.gif" />
+    <Content Include="images\smilies\frown.gif" />
+    <Content Include="images\smilies\f_you.gif" />
+    <Content Include="images\smilies\gary.gif" />
+    <Content Include="images\smilies\giggity.gif" />
+    <Content Include="images\smilies\grrr.gif" />
+    <Content Include="images\smilies\guilty.gif" />
+    <Content Include="images\smilies\hannibal.png" />
+    <Content Include="images\smilies\headphone.gif" />
+    <Content Include="images\smilies\hit.gif" />
+    <Content Include="images\smilies\hmm.gif" />
+    <Content Include="images\smilies\hug.gif" />
+    <Content Include="images\smilies\huh.gif" />
+    <Content Include="images\smilies\hula.gif" />
+    <Content Include="images\smilies\ignore1.gif" />
+    <Content Include="images\smilies\inlove.gif" />
+    <Content Include="images\smilies\jerkin.gif" />
+    <Content Include="images\smilies\king.gif" />
+    <Content Include="images\smilies\krs.gif" />
+    <Content Include="images\smilies\laff.gif" />
+    <Content Include="images\smilies\laugh.gif" />
+    <Content Include="images\smilies\mad.gif" />
+    <Content Include="images\smilies\madfight.gif" />
+    <Content Include="images\smilies\mario.gif" />
+    <Content Include="images\smilies\music_1.gif" />
+    <Content Include="images\smilies\ninja_1.gif" />
+    <Content Include="images\smilies\ninja_2.gif" />
+    <Content Include="images\smilies\ohmy.gif" />
+    <Content Include="images\smilies\old.gif" />
+    <Content Include="images\smilies\popcorn.gif" />
+    <Content Include="images\smilies\puke.gif" />
+    <Content Include="images\smilies\queen.gif" />
+    <Content Include="images\smilies\rambo.gif" />
+    <Content Include="images\smilies\redface.gif" />
+    <Content Include="images\smilies\RIP.gif" />
+    <Content Include="images\smilies\rolleyes.gif" />
+    <Content Include="images\smilies\sad.gif" />
+    <Content Include="images\smilies\santa.gif" />
+    <Content Include="images\smilies\scheme.gif" />
+    <Content Include="images\smilies\shocking.gif" />
+    <Content Include="images\smilies\slapfight.gif" />
+    <Content Include="images\smilies\smhrd3.gif" />
+    <Content Include="images\smilies\smile.gif" />
+    <Content Include="images\smilies\smiley-sad056.gif" />
+    <Content Include="images\smilies\smokin.gif" />
+    <Content Include="images\smilies\smurf.gif" />
+    <Content Include="images\smilies\spawn.gif" />
+    <Content Include="images\smilies\spidey.gif" />
+    <Content Include="images\smilies\stalker.gif" />
+    <Content Include="images\smilies\STFU.gif" />
+    <Content Include="images\smilies\stylin.gif" />
+    <Content Include="images\smilies\thumbsdown.gif" />
+    <Content Include="images\smilies\thumbsup.gif" />
+    <Content Include="images\smilies\tongue.gif" />
+    <Content Include="images\smilies\tsg_smiley_banned.gif" />
+    <Content Include="images\smilies\ugh.gif" />
+    <Content Include="images\smilies\umad.gif" />
+    <Content Include="images\smilies\unsure.gif" />
+    <Content Include="images\smilies\violent.gif" />
+    <Content Include="images\smilies\violent_01.gif" />
+    <Content Include="images\smilies\weight.gif" />
+    <Content Include="images\smilies\weirdo.gif" />
+    <Content Include="images\smilies\werd.gif" />
+    <Content Include="images\smilies\whistle.gif" />
+    <Content Include="images\smilies\wink.gif" />
+    <Content Include="images\smilies\winning2.gif" />
+    <Content Include="images\smilies\wolverine.gif" />
+    <Content Include="images\smilies\yawn.gif" />
+    <Content Include="images\smilies\yayo.gif" />
+    <Content Include="images\smilies\yes.gif" />
+    <Content Include="index.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\apple-touch-icon.png" />
+    <Content Include="images\arrowDown.png" />
+    <Content Include="images\arrowUp.png" />
+    <Content Include="images\authorBG.gif" />
+    <Content Include="images\authorBGHighlight.gif" />
+    <Content Include="images\btnGeneric.png" />
+    <Content Include="images\btnToolbar.png" />
+    <Content Include="images\btnToolbarBack.png" />
+    <Content Include="images\btnToolbarRed.png" />
+    <Content Include="images\editPencil.gif" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\listArrow.png" />
+    <Content Include="images\listDelete.png" />
+    <Content Include="images\logoBackground.gif" />
+    <Content Include="images\logoSOHH.png" />
+    <Content Include="images\pinstripes.png" />
+    <Content Include="images\replyQuotes.gif" />
+    <Content Include="images\styleMainV28.css" />
+    <Content Include="images\subheaderBG.gif" />
+    <Content Include="images\textItemBG.gif" />
+    <Content Include="images\threadLock.gif" />
+    <Content Include="images\toggleOff.gif" />
+    <Content Include="images\toggleOn.gif" />
+    <Content Include="images\toolbar.png" />
+    <Content Include="login.aspx" />
+    <Content Include="MobileSohhBase.aspx" />
+    <Content Include="settings.aspx" />
+    <Content Include="showthread.aspx" />
+    <Content Include="showthreadposters.aspx" />
+    <Content Include="xslt\forumdisplay.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xslt\index.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLogger.cs" />
+    <Compile Include="errors\GeneralError.aspx.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errors\GeneralError.aspx.designer.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errors\PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errors\PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForceError.aspx.cs">
+      <DependentUpon>ForceError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForceError.aspx.designer.cs">
+      <DependentUpon>ForceError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="post.aspx.cs">
+      <DependentUpon>post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="post.aspx.designer.cs">
+      <DependentUpon>post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privacy.aspx.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacy.aspx.designer.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forumdisplay.aspx.cs">
+      <DependentUpon>forumdisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forumdisplay.aspx.designer.cs">
+      <DependentUpon>forumdisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MobileSohhBase.aspx.cs">
+      <DependentUpon>MobileSohhBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MobileSohhBase.aspx.designer.cs">
+      <DependentUpon>MobileSohhBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MobileSohhMaster.Master.cs">
+      <DependentUpon>MobileSohhMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MobileSohhMaster.Master.designer.cs">
+      <DependentUpon>MobileSohhMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="settings.aspx.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings.aspx.designer.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showthread.aspx.cs">
+      <DependentUpon>showthread.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showthread.aspx.designer.cs">
+      <DependentUpon>showthread.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showthreadposters.aspx.cs">
+      <DependentUpon>showthreadposters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showthreadposters.aspx.designer.cs">
+      <DependentUpon>showthreadposters.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HtmlWebScraper\DataScrapingHelper.csproj">
+      <Project>{760BFA77-7EEF-4CB1-A6CC-9171146346F8}</Project>
+      <Name>DataScrapingHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="MobileSohhMaster.Master" />
+    <None Include="Work Items.xlsx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10001</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

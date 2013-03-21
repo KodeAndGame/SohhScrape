@@ -1,0 +1,14 @@
+﻿body 
+{
+}
+
+div#header 
+{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+div#detailedErrors
+{
+    background-color: #E4CC67
+}

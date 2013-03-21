@@ -1,0 +1,949 @@
+body {
+	margin: 0;
+	font-family: Helvetica;
+	font-size: 100%;
+	background: #FFFFFF;
+	color: #000000;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+}
+
+body.pinstripes {
+	background-image: url(pinstripes.png);
+}
+
+p { margin: 0; }
+
+img { max-width: 100%; }
+
+dt { font-weight: bold; }
+dd { margin-left: 10px; margin-bottom: 10px; }
+
+div.toolbar {
+	border-bottom: 1px solid #3a4653;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-top: 1px solid #6d84a2;
+	padding: 7px 10px;
+	position: relative; 
+	height: 45px;
+	background: url(toolbar.png) #6d84a2 repeat-x;
+}
+
+div.toolbar a.backButton, div.toolbar a.leftButton {
+	background: url(btnToolbarBack.png) #364f72 repeat-x;
+	display: block;
+	left: 6px;
+	padding-left: 15px;
+	position: absolute;
+	text-decoration: none;
+}
+
+div.toolbar a.backButton span, div.toolbar a.leftButton span {
+	background: url(btnToolbarBack.png) #364f72 top right;
+	color: #FFFFFF;
+	display: block;
+	line-height: 30px;
+	overflow: hidden;
+	padding-right: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+div.toolbar a.leftButton {
+	padding-left: 10px;
+	background: url(btnToolbar.png) #364f72 repeat-x;
+}
+
+div.toolbar a.rightButton {
+	background: url(btnToolbar.png) #364f72 repeat-x;
+	display: block;
+	right: 6px;
+	padding-left: 10px;
+	position: absolute;
+	text-decoration: none;
+}
+
+div.toolbar a.rightButton span {
+	background: url(btnToolbar.png) #364f72 top right;
+	color: #FFFFFF;
+	display: block;
+	line-height: 30px;
+	overflow: hidden;
+	padding-right: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+div.toolbar a.centerButton {
+	background: url(btnToolbar.png) #364f72 repeat-x;
+	display: block;
+	left: 50%;
+	margin: 0 0 0 -60px;
+	padding-left: 10px;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	width: 110px;
+}
+
+div.toolbar a.centerButton span {
+	background: url(btnToolbar.png) #364f72 top right;
+	color: #FFFFFF;
+	display: block;
+	line-height: 30px;
+	overflow: hidden;
+	padding-right: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+div.toolbar img.toolbarTabs {
+	left: 50%;
+	margin: 0 0 0 -76px;
+	position: absolute;
+	width: 152px;
+}
+
+div.toolbar a.deleteButton span {
+	background: url(btnToolbarRed.png) #cc0000 top right;
+}
+
+div.toolbar a.deleteButton {
+	background: url(btnToolbarRed.png) #cc0000 repeat-x;	
+}
+
+div.toolbar h1 {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	left: 50%;
+	margin: 6px 0 0 -150px;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0;
+	white-space: nowrap;
+	width: 300px;
+}
+
+div.toolbar h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+div#subHeader, div#subFooter {
+	background: url(subheaderBG.gif) #787878 bottom repeat-x;
+	border-bottom: 1px solid #000;
+}
+
+div#subHeader a, div#subFooter a {
+	background: url(arrowDown.png) no-repeat right center;
+	border-top: 1px solid #999;
+	color: #fff;
+	display: block;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px 35px 10px 10px;
+	text-decoration: none;
+}
+
+div#subFooter a {
+	background: url(arrowUp.png) no-repeat right center;
+	font-size: 80%;
+}
+
+div#subHeader a em {
+	color: #ccc;
+	font-style: normal;
+}
+
+div#subHeader a span.pageNumbers {
+	color: #bbb;
+	font-size: 90%;
+}
+
+div.instructions {
+	background-color: #ccc;
+	color: #000;
+	font-size: 80%;
+	padding: 10px;
+}
+
+div.profile {
+	padding: 10px;
+}
+
+div.profile div.avatar {
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	overflow: hidden;
+	width: 75px;
+	height: 100px;
+}
+
+div.profile div.avatar img {
+	width: 75px;
+	max-height: 100px;
+}
+
+div.profile p.name {
+	color: #1f2732;
+	font-size: 120%;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+
+div.profile p.maininfo {
+	color: #323943;
+	font-size: 90%;
+	margin-bottom: 2px;
+}
+
+div.profile div.infoArea {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	clear: both;
+	margin: 10px auto;
+	-webkit-border-radius: 15px;
+}
+
+div.profile div.infoArea p.infoItem {
+	border-bottom: 1px solid #aaa;
+	font-size: 80%;
+	font-weight: bold;
+	padding: 15px 20px;
+}
+
+div.profile div.infoArea p.bottom {
+	border: none;
+}
+
+div.profile div.infoArea p.infoItem strong {
+	color: #586077;
+	padding-right: 5px;
+}
+
+div.subscribe {
+	background-color: #ddd;
+	text-align: right;
+	padding: 5px 10px;
+}
+
+div.subscribe a {
+	color: #333;
+	font-size: 70%;
+	text-decoration: none;
+}
+
+div.loggedIn {
+	background-color: #0c0;
+	padding-bottom: 1px;
+}
+
+p.noItems {
+	margin: 30px 10px 250px 10px;
+	text-align: center;
+}
+
+table.list td {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+table.list tr.highlight td {
+	background-color: #dffadf;
+}
+
+td.separator {
+	background: url(listSeparator.png) #b8c1c8 top repeat-x;
+	border-top: 1px solid #717d85;
+	border-bottom: 1px solid #8c9297;
+	color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+	line-height: 1.5;
+	padding-left: 10px;
+	text-shadow: #64696e 1px 1px 1px;
+}
+
+a.forumHeader {
+	color: #000;
+	background-color: #999;
+	display: block;
+	padding: 8px 0px 8px 10px;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.forumItem {
+	color: #000;
+	display: block;
+	padding: 8px 0px 8px 25px;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.threadItem {
+	color: #000;
+	display: block;
+	padding: 8px 0px 8px 10px;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.old {
+	color: #666;	
+}
+
+a.threadLocked {
+	color: #999;
+	padding-left: 40px;
+	background: url(threadLock.gif) left center no-repeat;
+}
+
+a.threadItemArrow {
+	background: url(listArrow.png) 20px center no-repeat;
+	display: block;
+	padding: 8px;
+	width: 30px;
+	height: 20px;
+}
+
+a.threadItemDelete {
+	background: url(listDelete.png) center no-repeat;
+	display: block;
+	padding: 8px;
+	width: 30px;
+	height: 30px;
+}
+
+span.totalPages {
+	color: #999;
+	font-size: 80%;
+}
+
+span.totalPages strong {
+	color: #c00;
+}
+
+div.listFormControls {
+	background-color: #ddd;
+	color: #000;
+	padding: 5px;
+}
+
+span.searchResultDesc {
+	color: #999;
+	font-size: 80%;
+}
+
+span.searchResultDesc em {
+	color: #c00;
+}
+
+div.post {}
+
+div.author {
+	background: url(authorBG.gif) #b0b0b0 top repeat-x;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #777;
+	margin-bottom: 0px;
+	min-height: 55px;
+	padding: 10px;
+}
+
+div.authorHidden {
+	background: url(authorBG.gif) #b0b0b0 top repeat-x;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #777;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+
+div.authorHighlight {
+	background: url(authorBGHighlight.gif) #8dd18f top repeat-x;	
+}
+
+div.avatar {
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+	width: 40px;
+	height: 54px;
+}
+
+div.avatarNone {
+	border: 1px solid #999;
+	width: 38px;
+	height: 38px;
+}
+
+div.avatar img {
+	width: 40px;
+	max-height: 54px;
+}
+
+p.userName, p.userNameAdmin {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+p.userName a {
+	color: #000;
+	text-decoration: none;	
+}
+
+p.userNameAdmin {
+	color: #c00;
+}
+
+p.userNameAdmin a {
+	color: #c00;
+	text-decoration: none;	
+}
+
+p.userTag {
+	font-size: 90%;
+}
+
+p.postTimestamp {
+	color: #595959;
+	font-size: 90%;
+}
+
+div.replyToPost 
+{
+	float: right;
+	width: 30px;
+	height: 20px;
+}
+
+a.replyQuotes {
+	background: url(replyQuotes.gif) center center no-repeat;
+	display: block;
+	width: 30px;
+	height: 20px;
+	text-decoration:none;
+}
+
+a.editPencil {
+	background: url(editPencil.gif) center center no-repeat;
+	display: block;
+	width: 30px;
+	height: 20px;
+}
+
+div.postTitle {
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	font-size: 90%;
+	font-weight: bold;
+	margin: 10px 10px 0 10px;
+	padding-bottom: 5px;
+}
+
+div.message {
+	font-size: 90%;
+	overflow: hidden;
+	padding: 15px 10px 15px 10px;
+}
+
+div.hidden {
+	color: #aaa;	
+}
+
+div.message div.codeTitle {
+	color: #777;
+	font-size: 70%;
+	font-style: normal;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+div.message pre.code {
+	background-color: #111;
+	color: #fff;
+	font-family: monospace;
+	font-size: 70%;
+	font-weight: bold;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+}
+
+div.message div.code {
+	background-color: #111;
+	color: #fff;
+	font-family: monospace;
+	font-size: 70%;
+	font-weight: bold;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+}
+
+div.message a.youtubeLink {
+	background-color: #ccc;
+	display: block;
+	padding: 5px 10px 8px 10px;
+	width: 230px;
+}
+
+div.message span.highlight { color: #cc0000; }
+
+div.message blockquote {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.message ul, div.message ol {
+	padding-left: 15px;
+}
+
+div.editData {
+	color: #666;
+	font-size: 70%;
+	font-style: italic;
+	padding: 0px 10px 10px 10px;
+}
+
+div.quote {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	font-size: 90%;
+	font-style: italic;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+}
+
+td.quote {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	font-size: 90%;
+	font-style: italic;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+}
+
+div.quoteHighlight {
+	background-color: #d7efd9;
+}
+
+div.message div.quoteAuthor {
+	color: #777;
+	font-size: 80%;
+	font-style: normal;
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+div.message div.quoteAuthorUser {
+	color: #050;
+	font-size: 70%;
+	font-style: normal;
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+div.buttonGroup {
+	margin: 15px auto;
+	width: 284px;
+	height: 50px;
+	padding: 0;
+}
+
+a.roundButton, div.roundButton {
+	background-color: #ddd;
+	border: 1px solid #aaa;
+	color: #000;
+	display: block;
+	float: left;
+	font-size: 18px;
+	margin: 0 5px;
+	line-height: 40px;
+	-webkit-border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+	width: 130px;
+}
+
+a.roundButtonWide {
+	background-color: #ddd;
+	border: 1px solid #aaa;
+	color: #000;
+	display: block;
+	font-size: 18px;
+	margin: 10px auto 20px auto;
+	line-height: 40px;
+	-webkit-border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+	width: 270px;
+}
+
+a.roundButtonWideOff {
+	background-color: #fff;
+	border: 1px dashed #aaa;
+	color: #999;
+	display: block;
+	font-size: 18px;
+	margin: 10px auto 20px auto;
+	line-height: 40px;
+	-webkit-border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+	width: 270px;
+}
+
+a.roundButtonOff, div.roundButton {
+	background-color: #fff;
+	border: 1px dashed #aaa;
+	color: #999;
+	display: block;
+	float: left;
+	font-size: 18px;
+	margin: 0 5px;
+	line-height: 40px;
+	-webkit-border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+	width: 130px;
+}
+
+a.accountButton {
+	background: url(listArrow.png) #eee center right no-repeat;
+	border: 1px solid #999;
+	color: #000;
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 20px 20px;
+	padding: 10px 12px;
+	text-decoration: none;
+	text-align: left;
+	-webkit-border-radius: 10px;
+}
+
+a.genericButton {
+	background: url(btnGeneric.png) center center #eee;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #4f4f4f;
+	border-left: 1px solid #4f4f4f;
+	border-right: 1px solid #4f4f4f;
+	color: #333;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 16px;
+	margin: 20px auto;
+	padding-bottom: 10px;
+	padding-top: 12px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0;
+	width: 290px;
+	-webkit-border-radius: 10px;
+}
+
+a.genericButton span {
+	display: block;
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+span.spoiler {
+	background-color: #000;
+	color: #000;
+}
+
+div.hiddenImage {
+	background-color: #909090;
+	color: #fff;
+	display: inline;
+	padding: 2px;
+}
+
+a.hiddenImage {
+	background-color: #909090;
+	color: #fff;
+	margin-bottom: 2px 0;
+	padding: 2px 5px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+}
+
+div#logoHeader {
+	background: url(logoBackground.gif) repeat-x;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+div#prefsBody, div#prefsSortBody {
+  text-align: center;
+  padding: 10px;
+}
+
+div#prefsBody div.pref, div#prefsSortBody div.pref {
+	background-color: #fff;
+  border-bottom: 1px solid #aaa;
+ 	border-left: 1px solid #aaa;
+ 	border-right: 1px solid #aaa;
+ 	padding-right: 10px;
+ 	padding-bottom: 5px;
+ 	padding-top: 5px;
+}
+
+div#prefsBody div.first, div#prefsSortBody div.first {
+	border-top: 1px solid #aaa;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+}
+
+div#prefsBody div.last, div#prefsSortBody div.last {
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+div#prefsBody a, div#prefsSortBody p {
+	color: #000;
+	display: block;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+}
+
+div#prefsSortBody a {
+	color: #000;
+	display: block;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+}
+
+div#prefsBody a.true {
+  background: url(toggleOn.gif) right center no-repeat;
+}
+
+div#prefsBody a.false {
+  background: url(toggleOff.gif) right center no-repeat;
+}
+
+a#prefTimezone, a#prefMainMenuOrder, a#prefFontSize {
+	background: url(listArrow.png) center right no-repeat;
+}
+
+a#prefTimezone span, a#prefFontSize span {
+	color: #00f;
+	font-weight: normal;
+}
+
+div#prefsSortBody img.arrow {
+	float: right;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div#prefsSortBody img.off {
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+}
+
+a.timezoneBtn {
+	background-color: #fff;
+  border: 1px solid #aaa;
+  border-bottom: 0;
+	color: #000;
+	display: block;
+ 	padding: 15px 10px;
+  text-align: left;
+  text-decoration: none;
+}
+
+div#about {
+	margin: 10px;
+}
+
+div#about p {
+	font-size: 90%;
+	margin-bottom: 15px;
+}
+
+div#about img#myMug {
+	width: 90px;
+	height: 120px;
+	float: right;
+	margin: 4px 8px 2px 0px;
+}
+
+form.login {
+	margin: 20px 10px;	
+}
+
+input.loginInput {
+	font-size: 120%;
+	margin-bottom: 10px;
+	width: 92%;
+}
+
+input.loginSubmit {
+	font-size: 18px;
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+}
+
+a.alert {
+	background-color: #01530D;
+	color: #eee;
+	display: block;
+	font-size: 70%;
+	font-weight: bold;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+a.quoteAuthor {
+	background: url(textItemBG.gif) #dde7f8 center right;
+	border-top: 1px solid #a1bbe9;
+	border-left: 1px solid #a1bbe9;
+	border-bottom: 1px solid #7682d6;
+	border-right: 1px solid #7682d6;
+	color: #222;
+	font-size: 90%;
+	padding: 3px 20px 3px 8px;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+}
+
+span.quoteLength {
+	color: #222;
+	font-size: 90%;
+	padding-left: 5px;
+}
+
+div.postInput {
+	border-bottom: 1px solid #aaa;
+	color: #888;
+	padding: 12px 10px;
+}
+
+span.postThreadTitle {
+	color: #222;
+	font-size: 90%;
+	padding-left: 0px;
+}
+
+input.postInput {
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	width: 80%;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0 0;
+}
+
+a.postInputRemove {
+	display:block;
+	font-weight: bold;
+	float: right;
+	text-decoration: none;
+	width: 15px;
+}
+
+div.postButtonBar {
+	background-color: #333;
+	background: url(authorBG.gif) #b0b0b0 bottom repeat-x;
+	padding: 7px 6px 5px 6px;
+}
+
+div.postMoreOptions {
+	border-bottom: 1px solid #aaa;
+	padding: 8px 0 8px 10px;
+}
+
+div.postMessageArea {
+	padding: 0 0 20px 0;
+}
+
+textarea.postMessage {
+	background-color: #fff;
+	border: 0;
+	font-size: 90%;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	height: 500px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0 0;
+}
+
+div.errorMessage {
+	font-size: 120%;
+	margin: 20px auto 20px auto;
+	width: 290px;
+}
+
+div.errorMessage strong {
+	color: #c00;
+}
+
+div.errorMessage img.errorSmiley {
+	float: left;
+	margin: 0 10px;
+}
+
+div.formItems {
+	margin: 30px 10px 50px 10px;
+}
+
+div.formItems p {
+	text-align: center;
+	margin: 20px 0px;
+}
+
+div.formItems label {
+	padding-right: 10px;
+}
+
+div.formItems input {
+	font-size: 90%;
+}
+
+div.formItems input.submitButton {
+	line-height: 20px;
+	width: 250px;
+}
+
+.loginError {
+    margin: 10px 10px 5px 0px; 
+    color: #c00;
+}
